@@ -1,0 +1,25 @@
+[ClassVersion("1.0.0"), FriendlyName("AdcsCertificateTemplate")]
+class AdcsCertificateTemplate : OMI_BaseResource
+{
+	[Key] string TemplateName;
+	[Required] string cn;
+	[Required] string displayName;
+	[Required] string name;
+	[Required] string msPKI_Cert_Template_OID;
+	[Required] string msPKI_Certificate_Application_Policy;
+	[Required] string msPKI_Template_Minor_Revision;
+	[Required] string msPKI_Template_Schema_Version;
+	[Required] string flags;
+	[Required] string msPKI_Certificate_Name_Flag;
+	[Required] string msPKI_Enrollment_Flag;
+	[Required] string msPKI_Private_Key_Flag;
+	[Required] string msPKI_Minimal_Key_Size;
+	[Required] string pKIKeyUsage;
+	[Required] string pKIExtendedKeyUsage;
+	[Required] string pKIDefaultCSPs;
+	[Required] string msPKI_RA_Application_Policies;
+	[Required] string copyFrom;
+	[Write] string Security;
+	[Write] string copyFromValidityPeriod;
+	[Write] string PrivateKeyPermissions;
+};
